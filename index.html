@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Защита сайта</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+  <script src="https://unpkg.com/website_security@1.0.3/index.js"></script>
+  <script src="./index.js"></script>
+</head>
+<body class="h-full flex justify-center items-center bg-gray-100">
+  <div class="text-center bg-white p-8 rounded-lg shadow-lg">
+    <h1 class="text-4xl font-bold mb-8">Защита контента от копирования</h1>
+    <p class="text-lg mb-8">Защита сайта от копирования играет ключевую роль в сохранении уникальности контента и обеспечении интеллектуальной собственности. Несанкционированное копирование материалов с сайта может привести к утрате авторских прав, потере трафика и проблемам с репутацией. Установка специального скрипта на сайт поможет защитить его контент и предотвратить копирование без разрешения.</p>
+    <div class="mx-auto p-4">
+        <p>Просто поместите следующую строку в раздел <mark>head</mark> Вашего сайта:</p>
+<div class="mt-4 flex justify-center items-center" id="codeContainer">
+    <code class="language-html" id="copyCode">
+        &lt;script src="https://unpkg.com/website_security@1.0.3/index.js"&gt;&lt;/script&gt;
+    </code>
+    <button onclick="copyToClipboard()" class="bg-blue-500 text-white px-2 py-1 rounded-md ml-4 cursor-pointer">Копировать</button>
+</div>
+    </div>
+  </div>
+</body>
+</html>
